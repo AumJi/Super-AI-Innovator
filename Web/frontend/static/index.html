@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="/css/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <style>
+        .validator-hint {
+            @apply text-xs text-blue-200 mt-1 mb-2 text-left;
+        }
+
+        .input.validator {
+            @apply flex items-center gap-2 bg-blue-900/20 border-blue-700 border rounded-lg px-3 py-2 w-full;
+        }
+
+        .input.validator input {
+            @apply bg-transparent outline-none w-full text-blue-100 placeholder-blue-300;
+        }
+
+        .input.validator svg {
+            @apply text-blue-300;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 min-h-screen flex items-center justify-center p-4"
+    data-theme="dark">
+    <div class="flex items-center justify-center h-full">
+        <div
+            class="bg-gradient-to-br from-blue-800/80 to-blue-900/80 p-6 sm:p-8 rounded-xl shadow-2xl w-full sm:w-96 max-w-full border border-blue-700/50 backdrop-blur-sm">
+            <!-- Header with logo -->
+            <div class="flex flex-col items-center mb-4 sm:mb-5">
+                <div
+                    class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-600 rounded-full flex items-center justify-center mb-2 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        class="w-6 h-6 sm:w-7 sm:h-7 text-blue-200">
+                        <path fill="currentColor"
+                            d="M12 3a9 9 0 0 0-9 9c0 1.5.4 3 1.1 4.3l-1.5 4.8 5-1.5c1.3.7 2.8 1.1 4.3 1.1 5 0 9-4 9-9s-4-9-9-9m0 16c-1.1 0-2.2-.2-3.2-.6l-.3-.1-2.5.7.7-2.4-.2-.3c-.5-1-.7-2-.7-3.1 0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7m1.6-5.2c-.2 0-.4-.1-.6-.2l-1.4-.7c-1.3-.6-2.1-1.1-2.6-1.9-.5-.8-.6-1.6-.5-2.5.1-.9.6-1.7 1.4-2.2.3-.2.6-.2.9-.1.3.1.6.4.7.6.2.3.4.6.4 1 0 .3-.1.6-.2.8-.1.2-.2.4-.2.5 0 .1 0 .3.1.4.1.2.3.4.5.6.4.4.8.7 1.2.9.2.1.4.2.6.2.2 0 .4 0 .6-.1.2-.1.5-.3.7-.5.2-.3.4-.6.5-.9.1-.3.2-.6.1-.9 0-.3-.1-.6-.3-.8-.2-.2-.5-.4-.8-.5-.3-.1-.6-.1-.9 0-.3.1-.6.2-.9.4l-.3.3c-.1.1-.2.1-.3.1-.1 0-.2 0-.3-.1-.3-.2-.6-.5-.8-.8-.2-.3-.4-.7-.5-1.1-.1-.4 0-.8.1-1.1.2-.4.5-.7.9-.9.4-.2.8-.3 1.2-.2.4 0 .8.1 1.2.3.4.2.7.5 1 .8.2.3.4.7.5 1.1.1.4.1.9 0 1.3-.2.8-.7 1.5-1.4 2.1-.7.6-1.5 1-2.4 1.2z" />
+                    </svg>
+                </div>
+                <h1 class="text-lg sm:text-xl font-bold text-blue-100">สวัสดี</h1>
+                <p class="text-xs sm:text-sm text-blue-300">ยินดีต้อนรับกลับ!</p>
+            </div>
+
+            <!-- Username field -->
+            <div class="mb-3">
+                <label class="input validator">
+                    <svg class="h-4 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                            stroke="currentColor">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </g>
+                    </svg>
+                    <input type="text" required placeholder="Username" pattern="[A-Za-z][A-Za-z0-9\-]*" minlength="3"
+                        maxlength="30" id="Username" autocomplete="off" />
+                </label>
+            </div>
+
+            <!-- Password field -->
+            <div class="mb-4">
+                <label class="input validator">
+                    <svg class="h-4 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                            stroke="currentColor">
+                            <path
+                                d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z">
+                            </path>
+                            <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                        </g>
+                    </svg>
+                    <input type="password" required placeholder="Password" minlength="8"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="Password" autocomplete="off" />
+                </label>
+            </div>
+
+            <!-- Submit button -->
+            <button
+                class="w-full px-4 py-2 sm:py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg hover:from-blue-500 hover:to-blue-400 transition-all shadow-md hover:shadow-blue-500/20 font-medium text-sm mt-1"
+                id="submitBtn">
+                คลิกที่นี่
+            </button>
+
+            <!-- Footer links -->
+            <div class="mt-4 text-center text-xs">
+                <a href="#" class="text-blue-300 hover:text-blue-200 transition">ลืมรหัสผ่าน?</a>
+                <span class="text-blue-500 mx-1.5">•</span>
+                <a href="#" class="text-blue-300 hover:text-blue-200 transition">สร้างบัญชีใหม่</a>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="static/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+</body>
+</html>
