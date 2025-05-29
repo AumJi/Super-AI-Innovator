@@ -1,8 +1,23 @@
-# วิธีใช้งาน
-สร้าง python env และติดตั้ง package ใน requirements.txt
-```
-- python -m venv myenv
-- myenv\Scripts\activate # สำหรับ Windows
-- source myenv/bin/activate # สำหรับ Linux/MacOS
-- cd Web & pip -r requirements.txt
-```
+# SUPERAI-5-INNOVATOR
+
+คำอธิบายสั้นๆ เกี่ยวกับโปรเจคนี้
+
+## 📌 ข้อกำหนดเบื้องต้น
+
+- Python 3.x
+- pip
+- virtualenv (แนะนำ)
+
+## 🛠️ การติดตั้ง
+
+### 1. สร้างและเปิดใช้งาน Virtual Environment
+
+```bash
+# สร้าง virtual environment
+python -m venv myenv
+
+# เปิดใช้งาน
+# Windows
+myenv\Scripts\activate
+# Linux/MacOS
+source myenv/bin/activate
