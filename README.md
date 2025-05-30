@@ -20,7 +20,7 @@ myenv\Scripts\activate
 # Linux/MacOS
 source myenv/bin/activate
 ```
-### ติดตั้งแพ็กเกจที่จำเป็น
+ติดตั้งแพ็กเกจที่จำเป็น
 ```
 pip install -r Web/requirements.txt
 ```
