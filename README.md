@@ -65,17 +65,6 @@ uvicorn backend.app.main:app --reload --port 8000
 
 ---
 
-## 📖 ภาพรวมโครงการ
-
-**SUPERAI-INNOVATOR-@KMITL** เป็นระบบที่:
-
-✅ ตรวจจับนกพิราบด้วย **YOLOv11**  
-✅ รองรับทั้งภาพนิ่งและวิดีโอ  
-✅ ใช้งานผ่านเว็บแอปแบบเรียลไทม์  
-✅ ออกแบบมาเพื่อเพิ่มความปลอดภัยในการบินบริเวณสนามบิน  
-
----
-
 ## 🚀 การใช้งาน
 
 ### 🔹 เทรนโมเดล
@@ -101,7 +90,6 @@ uvicorn backend.app.main:app --reload --port 8000
 SUPERAI-INNOVATOR-@KMITL/
 │
 ├── AI/
-│   ├── Datasets/
 │   ├── Train/
 │   │   ├── train_Yolo11.ipynb
 │   │   └── test.ipynb
@@ -120,24 +108,6 @@ SUPERAI-INNOVATOR-@KMITL/
 
 ---
 
-## 🙌 ทีมพัฒนา
-
-- 👨‍💻 นักพัฒนาจากโครงการ SUPER AI INNOVATOR @KMITL  
-- 🤝 สนับสนุนโดยสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
-
----
-
-## 📬 ติดต่อ
-
-หากมีคำถามหรือข้อเสนอแนะ  
-📧 Email: `contact@example.com`  
-📌 GitHub Issues: เปิด issue ได้เลย
-
----
-
-
----
-
-## 😂 Just for Fun
+## 😂 Coding !Is Happy
 
 ![Funny Pigeon](https://media.giphy.com/media/jUwpNzg9IcyrK/giphy.gif)
